@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img.png') }}">
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='img.png') }}" alt="Logo">
+  <main>
+    <form action="/submit" method="post">
+      <input type="text" name="username" class="user" placeholder="Mobile number or email address" required>
+      <br>
+      <input type="password" name="password" class="pass" placeholder="Password" required>
+      <br>
+      <div class="btn">
+        <button type="submit"><b>Log In</b></button>
+      </div>
+    </form>
+    <br>
+    <div class="btn2">
+      <a href="#">Forgotten password?</a>
+      <div class="or">
+        <p>--------------------- or -------------------------</p>
+      </div>
+      <button><b>Create new account</b></button>
+    </div>
+
+    <div class="language">
+      <ul class="lan">
+        <li><a href="#"><b>English (UK)</b></a></li>
+        <li><a href="#">हिंदी</a></li>
+      </ul>
+      <ul class="lan1">
+        <li><a href="#">मराठी</a></li>
+        <li><a href="#">ਪੰਜਾਬੀ</a></li>
+      </ul>
+      <ul class="lan2">
+        <li><a href="#">پنجابی</a></li>
+        <li><a href="#">اردو</a></li>
+      </ul>
+      <ul class="lan3">
+        <li><a href="#">ગુજરાતી</a></li>
+        <li><button class="language-btn">+</button></li>
+      </ul>
+    </div>
+
+  </main>
+</body>
+
+</html>
